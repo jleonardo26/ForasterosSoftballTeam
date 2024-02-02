@@ -195,14 +195,15 @@
       document.getElementById("PlayerCardBateadorAlexanderPenaPitcher").style.display="none";
   }
 
-  // //Joel Leonardo Pitcher
-  // function verJoelLeonardoPitcher() {
-  //   document.getElementById("cardJoelLeonardoPitcher").style.display="block";
-  // }
+  //Joel Leonardo Pitcher
+  function VerTarjetaJugadorJoelLeonardoPitcher(){
+    document.getElementById("PlayerCardBateadorJoelLeonardoPitcher").style.display="block";
+}
 
-  // function cerrarJoelLeonardoPitcher(){
-  //   document.getElementById("cardJoelLeonardoPitcher").style.display="none";
-  // }
+  function CerrarTarjetaJugadorJoelLeonardoPitcher(){
+      document.getElementById("PlayerCardBateadorJoelLeonardoPitcher").style.display="none";
+  }
+
 
 
 
