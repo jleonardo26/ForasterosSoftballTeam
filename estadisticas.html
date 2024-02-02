@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forasteros Softball Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="playercard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
+    <script src="playercard.js"></script>
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <div class="encabezado">
+        <p>Ultima actualizacion <span>[ 01 Febrero 2024 ]</span> | Esta web se actualiza 1 vez por semana, entre los dias Domingo y Martes</p>
+    </div>
+
+    <div class="contenedor-madre">
+
+        <!--HEADER: LOGO Y NAVBAR-->
+        <header>
+            
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <img src="img/LogoPNG.png" alt="logoForasterosSoftballTeam">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="#" class="btn-inicio">INICIO ▼</a>
+                            <ul class="dropdown">
+                                <li><a href="inicio.html">Inicio</a></li>
+                                <li><a href="inicio.html#jugadoresdestacados">Jugadores Destacados</a></li>
+                                <li><a href="inicio.html#calendario">Calendario</a></li>
+                                <li><a href="inicio.html#resultados">Ultimos Resultados</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="estadisticas.html" class="btn-estadisticas">ESTADISTICAS</a>
+                        </li>
+                        <li>
+                            <a href="galeria.html" class="btn-galeria">GALERIA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
+
+        <!--ESTADISTICAS BATEADORES-->
+        <h1>Estadisticas Generales Bateadores</h1>
+
+        <div class="tabla-estadisticas-bateadores">
+
+            <table>
+
+                <caption> <strong>G</strong> = Juegos jugados  |  <strong>AB</strong> = Turnos oficiales al bate  |
+                    <strong>H</strong> = Hits  |  <strong>HR</strong> = Homeruns o Cuadrangulares  |  <strong>R</strong> = Carreras anotadas (la cantidad de veces que el jugador a pisado home)  |  
+                    <strong>RBI</strong> = Carreras impulsadas  |  <strong>AVG</strong> = Promedio de bateo  |  <strong>OBP</strong> = Promedio de embasarse  |  
+                    <strong>HEB</strong> = Hits Extra bases (dobles, triples y homeruns o cuadrangulares)  |  <strong>BB</strong> = Bases por bolas  |
+                    <strong>OUT</strong> = Las veces que un jugador ha sido puesto OUT  |  <strong>SF</strong> = Fly de sacrificio para impulsar una carrera  |  
+                    <strong>K</strong> = Ponches o Strikeouts
+                </caption>
+            <tr>
+                <th>Player Card</th>
+                <th>Nombre</th>
+                <th>G</th>
+                <th>AB</th>
+                <th>H</th>
+                <th>HR</th>
+                <th>R</th>
+                <th>RBI</th>
+                <th>AVG</th>
+                <th>OBP</th>
+                <th>HEB</th>
+                <th>BB</th>
+                <th>OUT</th>
+                <th>SF</th>
+                <th>K</th>
+            </tr>
+
+            <!--Alexander Peña-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorAlexanderPena()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorAlexanderPena">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorAlexanderPena()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .000</p>
+                                    <p class="font-medium">OBP: .000</p>
+                                    <p class="font-medium">BB: 0</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Alexander Peña</h1>
+                                <p>Pitcher #27</p>
+                                <p class="temporada">Temporada Enero-Marzo: 0 - 0</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Alexander Peña</td> <!-- Nombre -->
+                <td>1</td> <!-- G -->
+                <td>3</td> <!-- AB -->
+                <td>0</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>0</td>  <!-- R -->
+                <td>0</td>   <!-- RBI -->
+                <td>.000</td>   <!-- AVG -->
+                <td>.000</td>   <!-- OBP -->
+                <td>0</td>   <!-- HEB -->
+                <td>0</td>   <!-- BB -->
+                <td>3</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Andres Fulcar-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorAndresFulcar()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorAndresFulcar">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorAndresFulcar()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .500</p>
+                                    <p class="font-medium">OBP: .571</p>
+                                    <p class="font-medium">BB: 1</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Andres Fulcar</h1>
+                                <p>Infield #12</p>
+                                <p class="temporada">Temporada Enero-Marzo: 6 - 3</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Andres Fulcar</td> <!-- Nombre -->
+                <td>2</td> <!-- G -->
+                <td>6</td> <!-- AB -->
+                <td>3</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>4</td>  <!-- R -->
+                <td>1</td>   <!-- RBI -->
+                <td>.500</td>   <!-- AVG -->
+                <td>.571</td>   <!-- OBP -->
+                <td>2</td>   <!-- HEB -->
+                <td>1</td>   <!-- BB -->
+                <td>3</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Angel Ogando-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorAngelOgando()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorAngelOgando">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorAngelOgando()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .444</p>
+                                    <p class="font-medium">OBP: .500</p>
+                                    <p class="font-medium">BB: 1</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Angel Ogando</h1>
+                                <p>Outfield #05</p>
+                                <p class="temporada">Temporada Enero-Marzo: 9 - 4</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Angel Ogando</td> <!-- Nombre -->
+                <td>3</td> <!-- G -->
+                <td>9</td> <!-- AB -->
+                <td>4</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>3</td>  <!-- R -->
+                <td>4</td>   <!-- RBI -->
+                <td>.444</td>   <!-- AVG -->
+                <td>.500</td>   <!-- OBP -->
+                <td>3</td>   <!-- HEB -->
+                <td>1</td>   <!-- BB -->
+                <td>5</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Baldwin Coplin-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorBaldwinCoplin()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorBaldwinCoplin">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorBaldwinCoplin()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .667</p>
+                                    <p class="font-medium">OBP: .700</p>
+                                    <p class="font-medium">HITS: 6</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Baldwin Coplin</h1>
+                                <p>Infield #11</p>
+                                <p class="temporada">Temporada Enero-Marzo: 9 - 6</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Baldwin Coplin</td> <!-- Nombre -->
+                <td>4</td> <!-- G -->
+                <td>9</td> <!-- AB -->
+                <td>6</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>5</td>  <!-- R -->
+                <td>5</td>   <!-- RBI -->
+                <td>.667</td>   <!-- AVG -->
+                <td>.700</td>   <!-- OBP -->
+                <td>1</td>   <!-- HEB -->
+                <td>1</td>   <!-- BB -->
+                <td>3</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Bryan Terrero-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorBryanTerrero()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorBryanTerrero">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorBryanTerrero()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .000</p>
+                                    <p class="font-medium">OBP: .000</p>
+                                    <p class="font-medium">BB: 0</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Bryan Terrero</h1>
+                                <p>NA #NA</p>
+                                <p class="temporada">Temporada Enero-Marzo: 0 - 0</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Bryan Terrero</td> <!-- Nombre -->
+                <td>0</td> <!-- G -->
+                <td>0</td> <!-- AB -->
+                <td>0</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>0</td>  <!-- R -->
+                <td>0</td>   <!-- RBI -->
+                <td>.000</td>   <!-- AVG -->
+                <td>.000</td>   <!-- OBP -->
+                <td>0</td>   <!-- HEB -->
+                <td>0</td>   <!-- BB -->
+                <td>0</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Felix Ramirez-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorFelixRamirez()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorFelixRamirez">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorFelixRamirez()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .600</p>
+                                    <p class="font-medium">OBP: .667</p>
+                                    <p class="font-medium">RBI: 6</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Felix Ramirez</h1>
+                                <p>Catcher #NA</p>
+                                <p class="temporada">Temporada Enero-Marzo: 5 - 3</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Felix Ramirez</td> <!-- Nombre -->
+                <td>2</td> <!-- G -->
+                <td>5</td> <!-- AB -->
+                <td>3</td> <!-- H -->
+                <td>1</td> <!-- HR -->
+                <td>1</td>  <!-- R -->
+                <td>6</td>   <!-- RBI -->
+                <td>.600</td>   <!-- AVG -->
+                <td>.667</td>   <!-- OBP -->
+                <td>1</td>   <!-- HEB -->
+                <td>1</td>   <!-- BB -->
+                <td>2</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Francisco Montero-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorFranciscoMontero()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorFranciscoMontero">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorFranciscoMontero()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .500</p>
+                                    <p class="font-medium">OBP: .538</p>
+                                    <p class="font-medium">RBI: 5</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Francisco Montero</h1>
+                                <p>Outfield #23</p>
+                                <p class="temporada">Temporada Enero-Marzo: 12 - 6</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Francisco Montero</td> <!-- Nombre -->
+                <td>4</td> <!-- G -->
+                <td>12</td> <!-- AB -->
+                <td>6</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>6</td>  <!-- R -->
+                <td>5</td>   <!-- RBI -->
+                <td>.500</td>   <!-- AVG -->
+                <td>.538</td>   <!-- OBP -->
+                <td>3</td>   <!-- HEB -->
+                <td>1</td>   <!-- BB -->
+                <td>6</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Jeffry Peña-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorJeffryPena()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorJeffryPena">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorJeffryPena()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .583</p>
+                                    <p class="font-medium">OBP: .615</p>
+                                    <p class="font-medium">HR: 2</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Jeffry Peña</h1>
+                                <p>Infield #10</p>
+                                <p class="temporada">Temporada Enero-Marzo: 12 - 7</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Jeffry Peña</td> <!-- Nombre -->
+                <td>4</td> <!-- G -->
+                <td>12</td> <!-- AB -->
+                <td>7</td> <!-- H -->
+                <td>2</td> <!-- HR -->
+                <td>6</td>  <!-- R -->
+                <td>11</td>   <!-- RBI -->
+                <td>.583</td>   <!-- AVG -->
+                <td>.615</td>   <!-- OBP -->
+                <td>4</td>   <!-- HEB -->
+                <td>1</td>   <!-- BB -->
+                <td>5</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>1</td>   <!-- K -->
+            </tr>
+
+            <!--Joel Leonardo-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorJoelLeonardo()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorJoelLeonardo">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorJoelLeonardo()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Zurda</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .333</p>
+                                    <p class="font-medium">OBP: .750</p>
+                                    <p class="font-medium">BB: 5</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Joel Leonardo</h1>
+                                <p>Pitcher #26</p>
+                                <p class="temporada">Temporada Enero-Marzo: 3 - 1</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Joel Leonardo</td> <!-- Nombre -->
+                <td>3</td> <!-- G -->
+                <td>3</td> <!-- AB -->
+                <td>1</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>3</td>  <!-- R -->
+                <td>2</td>   <!-- RBI -->
+                <td>.333</td>   <!-- AVG -->
+                <td>.750</td>   <!-- OBP -->
+                <td>1</td>   <!-- HEB -->
+                <td>5</td>   <!-- BB -->
+                <td>2</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>1</td>   <!-- K -->
+            </tr>
+
+            <!--Johan Ramirez-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorJohanRamirez()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorJohanRamirez">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorJohanRamirez()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Zurda</p>
+                                    <p>Lanza: Zurda</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .714</p>
+                                    <p class="font-medium">OBP: .714</p>
+                                    <p class="font-medium">HITS: 5</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Johan Ramirez</h1>
+                                <p>Outfield #30</p>
+                                <p class="temporada">Temporada Enero-Marzo: 7 - 5</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Johan Ramirez</td> <!-- Nombre -->
+                <td>2</td> <!-- G -->
+                <td>7</td> <!-- AB -->
+                <td>5</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>3</td>  <!-- R -->
+                <td>1</td>   <!-- RBI -->
+                <td>.714</td>   <!-- AVG -->
+                <td>.714</td>   <!-- OBP -->
+                <td>2</td>   <!-- HEB -->
+                <td>0</td>   <!-- BB -->
+                <td>2</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Malvin Marcano-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorMalvinMarcano()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorMalvinMarcano">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorMalvinMarcano()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .556</p>
+                                    <p class="font-medium">OBP: .615</p>
+                                    <p class="font-medium">RBI: 5</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Malvin Marcano</h1>
+                                <p>Catcher #07</p>
+                                <p class="temporada">Temporada Enero-Marzo: 9 - 5</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Malvin Marcano</td> <!-- Nombre -->
+                <td>4</td> <!-- G -->
+                <td>9</td> <!-- AB -->
+                <td>5</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>5</td>  <!-- R -->
+                <td>5</td>   <!-- RBI -->
+                <td>.556</td>   <!-- AVG -->
+                <td>.615</td>   <!-- OBP -->
+                <td>3</td>   <!-- HEB -->
+                <td>3</td>   <!-- BB -->
+                <td>4</td>   <!-- Out -->
+                <td>1</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Ramon "Ray" Rosario-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorRamonRosario()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorRamonRosario">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorRamonRosario()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Zurda</p>
+                                    <p>Lanza: Zurda</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .600</p>
+                                    <p class="font-medium">OBP: .692</p>
+                                    <p class="font-medium">RBI: 8</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Ramon "Ray" Rosario</h1>
+                                <p>Outfield #04</p>
+                                <p class="temporada">Temporada Enero-Marzo: 10 - 6</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Ramon "Ray" Rosario</td> <!-- Nombre -->
+                <td>4</td> <!-- G -->
+                <td>10</td> <!-- AB -->
+                <td>6</td> <!-- H -->
+                <td>1</td> <!-- HR -->
+                <td>9</td>  <!-- R -->
+                <td>8</td>   <!-- RBI -->
+                <td>.600</td>   <!-- AVG -->
+                <td>.692</td>   <!-- OBP -->
+                <td>4</td>   <!-- HEB -->
+                <td>3</td>   <!-- BB -->
+                <td>4</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Jose Terrero-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorJoseTerrero()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorJoseTerrero">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorJoseTerrero()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .000</p>
+                                    <p class="font-medium">OBP: .000</p>
+                                    <p class="font-medium">RBI: 0</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Jose Terrero</h1>
+                                <p>Outfield #13</p>
+                                <p class="temporada">Temporada Enero-Marzo: 0 - 0</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Jose Terrero</td> <!-- Nombre -->
+                <td>0</td> <!-- G -->
+                <td>0</td> <!-- AB -->
+                <td>0</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>0</td>  <!-- R -->
+                <td>0</td>   <!-- RBI -->
+                <td>.000</td>   <!-- AVG -->
+                <td>.000</td>   <!-- OBP -->
+                <td>0</td>   <!-- HEB -->
+                <td>0</td>   <!-- BB -->
+                <td>0</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Victor Feliz-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorVictorFeliz()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorVictorFeliz">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorVictorFeliz()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .111</p>
+                                    <p class="font-medium">OBP: .111</p>
+                                    <p class="font-medium">HITS: 1</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Victor Feliz</h1>
+                                <p>Outfield #02</p>
+                                <p class="temporada">Temporada Enero-Marzo: 9 - 1</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Victor Feliz</td> <!-- Nombre -->
+                <td>3</td> <!-- G -->
+                <td>9</td> <!-- AB -->
+                <td>1</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>0</td>  <!-- R -->
+                <td>0</td>   <!-- RBI -->
+                <td>.111</td>   <!-- AVG -->
+                <td>.111</td>   <!-- OBP -->
+                <td>0</td>   <!-- HEB -->
+                <td>0</td>   <!-- BB -->
+                <td>8</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Wilmer Piña-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorWilmerPina()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorWilmerPina">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorWilmerPina()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Zurda</p>
+                                    <p>Lanza: Zurda</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .200</p>
+                                    <p class="font-medium">OBP: .273</p>
+                                    <p class="font-medium">RBI: 2</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Wilmer Piña</h1>
+                                <p>Infield #15</p>
+                                <p class="temporada">Temporada Enero-Marzo: 10 - 2</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Wilmer Piña</td> <!-- Nombre -->
+                <td>4</td> <!-- G -->
+                <td>10</td> <!-- AB -->
+                <td>2</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>3</td>  <!-- R -->
+                <td>2</td>   <!-- RBI -->
+                <td>.200</td>   <!-- AVG -->
+                <td>.273</td>   <!-- OBP -->
+                <td>0</td>   <!-- HEB -->
+                <td>1</td>   <!-- BB -->
+                <td>8</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>1</td>   <!-- K -->
+            </tr>
+
+            <!--Yefry Perez-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorYefryPerez()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorYefryPerez">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorYefryPerez()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Zurda</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .667</p>
+                                    <p class="font-medium">OBP: .667</p>
+                                    <p class="font-medium">HITS: 4</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Yefry Perez</h1>
+                                <p>Infield #29</p>
+                                <p class="temporada">Temporada Enero-Marzo: 6 - 4</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Yefry Perez</td> <!-- Nombre -->
+                <td>2</td> <!-- G -->
+                <td>6</td> <!-- AB -->
+                <td>4</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>2</td>  <!-- R -->
+                <td>2</td>   <!-- RBI -->
+                <td>.667</td>   <!-- AVG -->
+                <td>.667</td>   <!-- OBP -->
+                <td>1</td>   <!-- HEB -->
+                <td>0</td>   <!-- BB -->
+                <td>2</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Yordy Feliz - VENTURA-->
+            <tr>
+                <td>
+                    <a href="javascript:VerTarjetaJugadorYordyFeliz()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorYordyFeliz">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorYordyFeliz()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Zurda</p>
+                                    <p>Lanza: Zurda</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .750</p>
+                                    <p class="font-medium">OBP: .846</p>
+                                    <p class="font-medium">HITS: 5</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Yordy Feliz</h1>
+                                <p>Infield #22</p>
+                                <p class="temporada">Temporada Enero-Marzo: 8 - 5</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Yordy Feliz</td> <!-- Nombre -->
+                <td>4</td> <!-- G -->
+                <td>8</td> <!-- AB -->
+                <td>5</td> <!-- H -->
+                <td>0</td> <!-- HR -->
+                <td>9</td>  <!-- R -->
+                <td>3</td>   <!-- RBI -->
+                <td>.750</td>   <!-- AVG -->
+                <td>.846</td>   <!-- OBP -->
+                <td>5</td>   <!-- HEB -->
+                <td>5</td>   <!-- BB -->
+                <td>2</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            <!--Daniel Pineda (Invitado)-->
+            <tr class="tr-background">
+                <td>
+                    <a href="javascript:VerTarjetaJugadorDanielPineda()">Ver Tarjeta</a>
+                        <div class="playercardbateador" id="PlayerCardBateadorDanielPineda">
+                            <div class="cerrar"><a href="javascript:CerrarTarjetaJugadorDanielPineda()"><i class='bx bxs-x-circle' ></i></a></div>
+                            <div class="cabecera">
+                                <img src="img/LogoPNG.png">
+                                <h1>Player Card</h1>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="imagen">
+                                    <img src="img/cards/nofoto.png">
+                                </div>
+                                <div class="numeros">
+                                    <br>
+                                    <p>Batea: Derecha</p>
+                                    <p>Lanza: Derecha</p>
+                                    <hr>
+                                    <br>
+                                    <p class="font-medium">AVG: .400</p>
+                                    <p class="font-medium">OBP: .500</p>
+                                    <p class="font-medium">RBI: 6</p>
+                                </div>
+                            </div>
+                            <div class="infojugador">
+                                <h1 class="nombreyapellido">Daniel Pineda</h1>
+                                <p>NA #NA</p>
+                                <p class="temporada">Temporada Enero-Marzo: 5 - 2</p>
+                            </div>
+                        </div>
+                </td>
+                <td>Daniel Pineda</td> <!-- Nombre -->
+                <td>2</td> <!-- G -->
+                <td>5</td> <!-- AB -->
+                <td>2</td> <!-- H -->
+                <td>1</td> <!-- HR -->
+                <td>2</td>  <!-- R -->
+                <td>6</td>   <!-- RBI -->
+                <td>.400</td>   <!-- AVG -->
+                <td>.500</td>   <!-- OBP -->
+                <td>2</td>   <!-- HEB -->
+                <td>1</td>   <!-- BB -->
+                <td>3</td>   <!-- Out -->
+                <td>0</td>   <!-- SF -->
+                <td>0</td>   <!-- K -->
+            </tr>
+
+            </table>
+        </div>
+
+        <!--ESTADISTICAS LANZADORES-->
+        <!--Falta por desarrollar Player Card de los lanzadores-->
+
+        <h1>Estadisticas Generales Lanzadores</h1>
+        <div class="tabla-estadisticas-lanzadores">
+
+            <table>
+                <caption>Estadisticas Lanzadores ForasterosSoftballTeam</caption>
+
+                <tr>
+                    <!-- <th>Player Card</th> -->
+                    <th>Nombre</th>
+                    <th>Juegos Lanzados</th>
+                    <th>Juegos Ganados</th>
+                    <th>Juegos Perdidos</th>
+                    <th>Porcentaje de Victorias</th>
+                </tr>
+
+                <!--Daniel Pineda-->
+                <tr class="tr-background">
+                    <!-- <td>
+                        <a href="javascript:verDanielPinedaPitcher()">Ver</a>
+                    <div class="tarjeta" id="cardDanielPinedaPitcher">
+                        <div id="cerrar"><a href="javascript:cerrarDanielPinedaPitcher()"><img src="img/x-regular-24.png"></a></div>
+                        <img src="img/cards/CardNA.png">
+                    </div>
+                    </td> Player Card -->
+                    <td>Daniel Pineda</td> <!--Nombre-->
+                    <td>1</td> <!--Juegos Lanzados-->
+                    <td>0</td> <!--Juegos Ganados-->
+                    <td>1</td> <!--Juegos perdidos-->
+                    <td>0%</td> <!--Porcentaje de victorias-->
+                </tr>
+
+                <!--Brayan Peña-->
+                <tr>
+                    <!-- <td>
+                        <a href="javascript:verAlexanderPenaPitcher()">Ver</a>
+                    <div class="tarjeta" id="cardAlexanderPenaPitcher">
+                        <div id="cerrar"><a href="javascript:cerrarAlexanderPenaPitcher()"><img src="img/x-regular-24.png"></a></div>
+                        <img src="img/cards/CardNA.png">
+                    </div>
+                    </td> Player Card -->
+                    <td>Alexander Peña</td> <!--Nombre-->
+                    <td>1</td> <!--Juegos Lanzados-->
+                    <td>0</td> <!--Juegos Ganados-->
+                    <td>1</td> <!--Juegos perdidos-->
+                    <td>0%</td> <!--Porcentaje de victorias-->
+                </tr>
+
+                <!--Joel Leonardo-->
+                <tr class="tr-background">
+                    <!-- <td>
+                        <a href="javascript:verJoelLeonardoPitcher()">Ver</a>
+                    <div class="tarjeta" id="cardJoelLeonardoPitcher">
+                        <div id="cerrar"><a href="javascript:cerrarJoelLeonardoPitcher()"><img src="img/x-regular-24.png"></a></div>
+                        <img src="img/cards/CardNA.png">
+                    </div>
+                    </td> Player Card -->
+                    <td>Joel Leonardo</td> <!--Nombre-->
+                    <td>2</td> <!--Juegos Lanzados-->
+                    <td>2</td> <!--Juegos Ganados-->
+                    <td>0</td> <!--Juegos perdidos-->
+                    <td>100%</td> <!--Porcentaje de victorias-->
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+
+<!--FOOTER-->
+<footer>
+
+    <div>
+    
+        <footer class="bg-primary text-center text-lg-start text-white">
+          <!-- Grid contenedor -->
+          <div class="container p-4">
+            <!--Grid fila-->
+            <div class="row my-4">
+              <!--Grid columna-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+      
+                <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                  <img src="img/LogoPNG.png" height="150px" alt="Logo Forasteros"
+                       loading="lazy" />
+                </div>
+      
+                <p class="text-center">Forasteros Softball Team</p>
+                <p class="text-center">Equipo de Softball Chata de Santo Domingo Este</p>
+      
+                <ul class="list-unstyled d-flex flex-row justify-content-center">
+                  <li>
+                    <a class="text-white px-2" href="https://www.facebook.com/LosForasterosSoftballteam" target="_blank">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white px-2" href="https://www.instagram.com/losforasteros_sbc?igsh=NTc4MTIwNjQ2YQ== " target="_blank">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white ps-2" href="Wa.me/18292678385" target="_blank">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                  </li>
+                </ul>
+      
+              </div>
+              <!--Grid columna-->
+      
+              <!--Grid columna-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4 text-center">Accesos Rapidos</h5>
+      
+                <ul class="list-unstyled ">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white linkfooter"><i class='bx bx-right-arrow-alt'></i></i>Inicio</a>
+                    <div class="footer-sublinks">
+                        <a class="linkfooter" href="inicio.html#jugadoresdestacados">• Jugadores Destacados</a>
+                        <a class="linkfooter" href="inicio.html#calendario">• Calendario</a>
+                        <a class="linkfooter" href="inicio.html#resultados">• Resultados</a>
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white linkfooter"><i class='bx bx-right-arrow-alt'></i></i>Estadisticas</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white linkfooter"><i class='bx bx-right-arrow-alt'></i></i>Galeria</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid columna-->
+      
+              <!--Grid columna-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Agenda un juego con nosotros!</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <p><i class='bx bx-map'></i> Play de Softball La Isabelita <br>
+                        <a class="linkfooter-linea" href="https://maps.app.goo.gl/UD6M9ZQQPVa28rXU8">Click Aquí</a> para ver en Google Maps</p>
+                  </li>
+                  <li>
+                    <p><i class='bx bx-phone'></i> Llamenos para agendar un juego<br>
+                    <strong>829-267-8385</strong> - Joel Leonardo<br>
+                    <strong>829-942-9526</strong> - Malvin Marcano</p>
+                  </li>
+                  <li>
+                    <p><i class='bx bx-notepad'></i> O escribemos por alguna de nuestras redes sociales<br>
+                        <a class="text-white px-2" href="https://www.facebook.com/LosForasterosSoftballteam" target="_blank">
+                            <i class='bx bxl-facebook-square'></i>
+                        </a>
+                        <a class="text-white px-2" href="https://www.instagram.com/losforasteros_sbc?igsh=NTc4MTIwNjQ2YQ== " target="_blank">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid columna-->
+            </div>
+            <!--Grid fila-->
+          </div>
+          <!-- Grid contenedor -->
+      
+          <!-- DERECHOS DE AUTOr Y DESARROLLADOR -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
+            <a class="text-white" href="https://www.instagram.com/losforasteros_sbc?igsh=NTc4MTIwNjQ2YQ==" target="_blank">ForasterosSoftballTeam</a>
+            <p>Contactos del desarrollador:
+                <a class="text-white px-2" href="https://github.com/jleonardo26" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a class="text-white px-2" href="https://www.instagram.com/joelleonardo26?igsh=bXR1NXZvODc3YXNi" target="_blank">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a class="text-white ps-2" href="Wa.me/18292678385" target="_blank">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </p>
+          </div>
+          <!-- fin derechos de autos y desarrollador -->
+        </footer>
+      
+      </div>
+      <!-- fin de contenedor -->
+    </footer>
+    
+</body>
+</html>

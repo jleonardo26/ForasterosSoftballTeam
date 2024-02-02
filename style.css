@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background-color: rgba(251,90,0,.8);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+    margin: 0px;
+    border: 0px;
+    padding: 1px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+.encabezado span{
+    font-weight: 800;
+    font-family: monospace;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+ 
+  
+
+header{
+    padding: 25px 0px;
+    border-bottom: 5px solid RGB(251,90,0);
+    background-color: black;
+}
+
+.contenedor-madre{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.contenedor-madre h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: poppins;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.contenedor-madre h3{
+    color: white;
+    font-family: poppins;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+
+/* 
+************************
+PAGINA DE INICIO
+*************************
+*/
+
+/* BARRA DE NAVEGACION Y LOGO*/
+
+.nav-bar{
+    width: 100%;
+    background-color: black ;
+}
+
+.nav-logo{
+    width: 100%;
+    display: flex;
+}
+
+.nav-logo img{
+    max-width: 250px;
+    margin: 0px auto;
+}
+
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(34, 32, 32, 0.525);
+    margin-top: 25px;
+}
+
+.nav-links li{
+    list-style-type: none;
+    margin: 25px 15px;
+    display: inline-block;
+    
+} 
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: poppins;
+    font-weight: 600;
+}
+
+/* dropdown */
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(34, 32, 32, 0.525);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .show {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* JUGADORES DESTACADOS */
+.div-jugadores-destacados{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-jugadores-destacados .card{
+    width: 30%;
+}
+
+@media screen and (max-width: 850px){
+    .div-jugadores-destacados{
+        display: block;
+    }
+    .div-jugadores-destacados .card{
+        width: 85%;
+        margin: 10px auto;
+    }
+}
+
+/* CALENDARIO PROXIMOS JUEGOS */
+
+.accordion{
+    width: 85%;
+    margin: 0px auto;
+}
+
+.accordion-body img{
+    max-width: 300px;
+    display: flex;
+    margin: 0px auto;
+}
+
+.accordion-body p{
+    margin: 25px auto;
+    width: 85%;
+    font-family: poppins;
+}
+
+@media screen and (max-width: 850px){
+    .accordion-body img{
+        max-width: 100%;
+        display: flex;
+        margin: 0px auto;
+    }
+}
+
+/* 
+************************
+PAGINA DE ESTADISTICAS
+*************************
+*/
+
+/* TABLA ESTADISTICAS */
+.tabla-estadisticas-bateadores{
+    background-color: white;
+    padding: 25px;
+    overflow-x: scroll;
+    margin: 0px auto;
+    
+}
+
+.tabla-estadisticas-bateadores table{
+    margin: 0px auto;
+}
+
+.tabla-estadisticas-bateadores tr th{
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tabla-estadisticas-bateadores tr td{
+    text-align: center;
+    border-left:2px solid black;
+    border-right: 2px solid black;
+    font-size: 25px;
+    padding:3px 10px;
+}
+
+.tabla-estadisticas-bateadores .tr-background{
+    background-color: rgb(197, 197, 197);
+}
+
+/* lanzadores */
+.tabla-estadisticas-lanzadores{
+    background-color: white;
+    padding: 25px;
+    overflow-x: scroll;
+    margin: 0px auto;
+}
+
+.tabla-estadisticas-lanzadores table{
+    margin: 0px auto;
+}
+
+.tabla-estadisticas-lanzadores tr th{
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tabla-estadisticas-lanzadores tr td{
+    text-align: center;
+    border-left:2px solid black;
+    border-right: 2px solid black;
+    font-size: 25px;
+    padding:3px 10px;
+}
+
+.tabla-estadisticas-lanzadores .tr-background{
+    background-color: rgb(197, 197, 197);
+}
+
+
+/* 
+************************
+PAGINA DE GALERIA
+*************************
+*/
+
+.en-contruccion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.en-contruccion img{
+ width: 70%;
+}
+
+
+/* FOOTER */
+
+.linkfooter-linea{
+    color: white;
+    padding: 2px;
+}
+
+.linkfooter-linea:hover{
+    color: black;
+    background-color: rgb(255, 254, 252);
+}
+
+.linkfooter{
+    color: white;
+    text-decoration: none;
+}
+
+.linkfooter:hover{
+    color: white;
+}
+
+.footer-sublinks{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}

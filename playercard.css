@@ -1,0 +1,92 @@
+
+.playercardbateador{
+    background-color: rgb(4,53,119);
+    border: 2px solid black;
+    width: 400px;
+    display: none;
+    border-radius:0% 0% 10% 10%;
+    position: absolute;
+    box-shadow: 15px -15px 40px black;
+}
+
+.cerrar{
+    position: absolute;
+    font-size: 25px;
+}
+
+.cerrar a{
+    text-decoration: none;
+    color: white;
+}
+
+.cerrar a:hover{
+    color: white;
+    font-size: 28px;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(251,90,0);
+    padding: 15px;
+    border-radius: 50% 0% 50% 0%;
+}
+
+
+.cabecera img{
+    width: 100px;
+}
+
+.cabecera h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.cuerpo{
+    display: flex;
+    border-bottom: 5px solid white;
+
+}
+
+.imagen{
+    width: 50%;
+}
+
+.imagen img{
+    width: 100%;
+}
+
+.numeros{
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.numeros .font-medium{
+    font-size: 25px;
+}
+
+.infojugador{
+    text-align: center;
+    color: white;
+}
+
+.infojugador h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.temporada{
+    background-color: white;
+    color: rgb(4,53,119);
+    margin: 10% 5%;
+}
+
+
+@media screen and (max-width:500px){
+    .playercardbateador{
+        width: 85%;
+    }
+}
