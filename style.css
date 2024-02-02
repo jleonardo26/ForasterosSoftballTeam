@@ -102,6 +102,17 @@ PAGINA DE INICIO
     width: 30%;
 }
 
+.card-body img{
+    max-width: 80%;
+    margin: 5% 10%;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.card-text{
+    text-align: justify;
+}
+
 @media screen and (max-width: 850px){
     .div-jugadores-destacados{
         display: block;
