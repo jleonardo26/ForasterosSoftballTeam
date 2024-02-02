@@ -47,6 +47,15 @@
       document.getElementById("PlayerCardBateadorBryanTerrero").style.display="none";
   }
 
+  //Delvis Montero
+  function VerTarjetaJugadorDelvisMontero(){
+    document.getElementById("PlayerCardBateadorDelvisMontero").style.display="block";
+}
+
+  function CerrarTarjetaJugadorDelvisMontero(){
+      document.getElementById("PlayerCardBateadorDelvisMontero").style.display="none";
+  }
+
    //Felix Ramirez
    function VerTarjetaJugadorFelixRamirez(){
     document.getElementById("PlayerCardBateadorFelixRamirez").style.display="block";
@@ -169,23 +178,22 @@
 
   //ESTADISTICAS DE PITCHERS
 
-  // //Daniel Pineda Pitcher
-  // function verDanielPinedaPitcher() {
-  //   document.getElementById("cardDanielPinedaPitcher").style.display="block";
-  // }
+  function VerTarjetaJugadorDanielPinedaPitcher(){
+    document.getElementById("PlayerCardBateadorDanielPinedaPitcher").style.display="block";
+}
 
-  // function cerrarDanielPinedaPitcher(){
-  //   document.getElementById("cardDanielPinedaPitcher").style.display="none";
-  // }
+  function CerrarTarjetaJugadorDanielPinedaPitcher(){
+      document.getElementById("PlayerCardBateadorDanielPinedaPitcher").style.display="none";
+  }
 
-  // //Alexander "BRAYAN" Peña Pitcher
-  // function verAlexanderPenaPitcher() {
-  //   document.getElementById("cardAlexanderPenaPitcher").style.display="block";
-  // }
+  //Alexander "BRAYAN" Peña Pitcher
+  function VerTarjetaJugadorAlexanderPenaPitcher(){
+    document.getElementById("PlayerCardBateadorAlexanderPenaPitcher").style.display="block";
+}
 
-  // function cerrarAlexanderPenaPitcher(){
-  //   document.getElementById("cardAlexanderPenaPitcher").style.display="none";
-  // }
+  function CerrarTarjetaJugadorAlexanderPenaPitcher(){
+      document.getElementById("PlayerCardBateadorAlexanderPenaPitcher").style.display="none";
+  }
 
   // //Joel Leonardo Pitcher
   // function verJoelLeonardoPitcher() {

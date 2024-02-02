@@ -79,63 +79,18 @@ PAGINA DE INICIO
 
 /* BARRA DE NAVEGACION Y LOGO*/
 
-.nav-bar{
-    width: 100%;
-    background-color: black ;
-}
-
 .nav-logo{
     width: 100%;
     display: flex;
+    margin-top: 2rem;
 }
 
 .nav-logo img{
-    max-width: 250px;
+    max-width: 300px;
     margin: 0px auto;
 }
 
-.nav-links{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(34, 32, 32, 0.525);
-    margin-top: 25px;
-}
 
-.nav-links li{
-    list-style-type: none;
-    margin: 25px 15px;
-    display: inline-block;
-    
-} 
-
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: poppins;
-    font-weight: 600;
-}
-
-/* dropdown */
-
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: rgba(34, 32, 32, 0.525);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .show {
-    display: flex;
-    flex-direction: column;
-  }
 
 /* JUGADORES DESTACADOS */
 .div-jugadores-destacados{
@@ -253,6 +208,15 @@ PAGINA DE ESTADISTICAS
     background-color: rgb(197, 197, 197);
 }
 
+@media screen and (max-width:500px) {
+    .tabla-estadisticas-bateadores tr th,
+    .tabla-estadisticas-bateadores tr td,
+    .tabla-estadisticas-lanzadores tr th,
+    .tabla-estadisticas-lanzadores tr td
+    {
+        font-size: 15px;
+    }
+}
 
 /* 
 ************************
