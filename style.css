@@ -219,13 +219,86 @@ PAGINA DE ESTADISTICAS
     background-color: rgb(197, 197, 197);
 }
 
-@media screen and (max-width:500px) {
+/* Lideres */
+
+.tabla-lideres{
+    background-color: white;
+    padding: 25px;
+}
+
+.tabla-lideres table{
+    margin: 10px auto;
+}
+
+.tabla-lideres tr th{
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tabla-lideres tr td{
+    text-align: center;
+    border-left:2px solid black;
+    border-right: 2px solid black;
+    font-size: 25px;
+    padding:3px 10px;
+}
+
+.tabla-lideres .tr-background{
+    background-color: rgb(197, 197, 197);
+}
+
+.div-tabla-lideres-avgyobp{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-tabla-lideres-hryrbi{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabla-izquierda{
+    width: 40%;
+}
+
+.tabla-derecha{
+    width: 40%;
+}
+
+
+@media screen and (max-width:800px) {
     .tabla-estadisticas-bateadores tr th,
     .tabla-estadisticas-bateadores tr td,
     .tabla-estadisticas-lanzadores tr th,
     .tabla-estadisticas-lanzadores tr td
     {
         font-size: 15px;
+    }
+
+    .div-tabla-lideres-avgyobp tr th,
+    .div-tabla-lideres-avgyobp tr td,
+    .div-tabla-lideres-hryrbi tr th,
+    .div-tabla-lideres-hryrbi tr td
+    {
+        font-size: 15px;
+    }
+
+    .tabla-lideres-avg,
+    .tabla-lideres-obp,
+    .tabla-lideres-hr,
+    .tabla-lideres-rbi{
+        margin: 20px auto;
+    }
+
+    .div-tabla-lideres-avgyobp,
+    .div-tabla-lideres-hryrbi{
+        display: block;
+    }
+
+    .tabla-derecha, .tabla-izquierda{
+        width: 100%;
     }
 }
 
