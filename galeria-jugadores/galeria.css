@@ -1,0 +1,13 @@
+*{
+    margin: none;
+    border: none;
+    padding: none;
+    background-color: black;
+    color: white;
+}
+
+.img-logo img{
+    width: 100%; 
+    max-width: 400px;
+}
+
